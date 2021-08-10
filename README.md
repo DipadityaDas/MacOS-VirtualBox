@@ -33,26 +33,26 @@ VBoxManage setextradata "VM Name" VBoxInternal/Devices/efi/0/Config/DmiSystemPro
 
 - Change the Product Signature
 ```shell
-VBoxManage setextradata "MacOS" "VBoxInternal/Devices/efi/0/Config/DmiBoardProduct" "Mac-E1008331FDC96864"
+VBoxManage setextradata "VM Name" "VBoxInternal/Devices/efi/0/Config/DmiBoardProduct" "Mac-E1008331FDC96864"
 ```
 
 - Change the Device Key
 ```shell
-VBoxManage setextradata "MacOS" "VBoxInternal/Devices/smc/0/Config/DeviceKey" "ourhardworkbythesewordsguardedpleasedontsteal(c)AppleComputerInc"
+VBoxManage setextradata "VM Name" "VBoxInternal/Devices/smc/0/Config/DeviceKey" "ourhardworkbythesewordsguardedpleasedontsteal(c)AppleComputerInc"
 ```
 
 - Change the value of smc or else the VM will go to Panic attack.
 ```shell
-VBoxManage setextradata "MacOS" "VBoxInternal/Devices/smc/0/Config/GetKeyFromRealSMC" 1
+VBoxManage setextradata "VM Name" "VBoxInternal/Devices/smc/0/Config/GetKeyFromRealSMC" 1
 ```
 
 - Change the Resolution of the MacOS VM accordingly 
 ```shell
-VBoxManage setextradata "MacOS" VBoxInternal2/EfiGraphicsResolution 1920x1080
+VBoxManage setextradata "VM Name" VBoxInternal2/EfiGraphicsResolution 1920x1080
 ```
 
 - After the Installation of the MacOS, we can remove the verbose to some extend.
 ```shell
-VBoxManage setextradata "MacOS" VBoxInternal2/EfiBootArgs "usb=0x800 keepsyms=1 -serial=0x1"
+VBoxManage setextradata "VM Name" VBoxInternal2/EfiBootArgs "usb=0x800 keepsyms=1 -serial=0x1"
 ```
 ---
