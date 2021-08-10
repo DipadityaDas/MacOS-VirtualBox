@@ -55,3 +55,4 @@ VBoxManage setextradata "MacOS" VBoxInternal2/EfiGraphicsResolution 1920x1080
 ```shell
 VBoxManage setextradata "MacOS" VBoxInternal2/EfiBootArgs "usb=0x800 keepsyms=1 -serial=0x1"
 ```
+---
